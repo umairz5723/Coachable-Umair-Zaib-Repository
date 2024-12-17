@@ -29,5 +29,6 @@ A template repository that Coachable students will use in the program for Leetco
 - PRs can consists of ***more than one problem*** and/or commit. However, ***each problem*** must include the leetcode problem number, loom link, and 2 - 3 word sentence summary within the PR message. Each problem must also be properly segmented with markdown, i.e. use seperators between each problem.
   - [Single Problem PR Example](https://github.com/Coachable-Dev/coachable-student-github-template/pull/1)
   - [Multi Problem PR Example](https://github.com/TimothyV97/coachable-student-github-template/pull/2)
+    - Note: Please limit each PR to 3 problems MAX.
   - [**IMPORTANT**] Please include your assigned coach as the reviewer of your PR. If you don't, your coach will not grade or review your PR because they will miss it.
   ![Image 3](images/GithubReviewers.png)
