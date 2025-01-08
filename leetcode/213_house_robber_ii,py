@@ -1,0 +1,35 @@
+""" 213. House Robber II"""
+
+from typing import List
+
+class Solution:
+
+    """ Solution Class """
+
+    def rob(self, nums: List[int]) -> int:
+        
+        """
+
+        This function uses the exat same logic from the problem house robber 1,
+        however we must package it as a function and call it on slices of the input array
+        from [1,n-1] and [2,n] because the first and last house are considered neighbors.
+        Therefore we return the maximum between the two calls that will ensure we don't rob two
+        adjacent houses.
+
+        """
+        if len(nums) <= 3:
+            return max(nums)
+        
+        def helper(houses):
+
+            house2 = 0
+            house1 = 0
+
+            for house in houses:
+                max_val = max(house1, house2 + house)
+                house2 = house1
+                house1 = max_val
+            
+            return max_val
+
+        return max(helper(nums[1:]), helper(nums[:-1]))
