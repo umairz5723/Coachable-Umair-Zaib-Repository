@@ -14,10 +14,10 @@ class Solution:
     def reverse_list(self, head: Optional[ListNode]) -> Optional[ListNode]:
         """
         Reverses a linked list iteratively.
-        
+
         Args:
             head: Head of the linked list to reverse
-            
+
         Returns:
             ListNode: Head of the reversed linked list
         """
@@ -32,4 +32,3 @@ class Solution:
             prev = cur
             cur = next_node
         return prev
-    
