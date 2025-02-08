@@ -30,4 +30,3 @@ class Solution:
             p2 = p2.next if p2 else head_b
 
         return p1
-    
