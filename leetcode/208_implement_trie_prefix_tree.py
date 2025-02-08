@@ -65,4 +65,3 @@ class Trie:
                 return False
             cur = cur.char_map[char]
         return True
-    
