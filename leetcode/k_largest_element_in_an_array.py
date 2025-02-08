@@ -1,9 +1,17 @@
 """215. Kth Largest in a Array """
+
 import heapq
+from typing import List
 
 class Solution:
-    def findKthLargest(self, nums: List[int], k: int) -> int:
-        
+    """ Solution class """
+    def find_kth_largest(self, nums: List[int], k: int) -> int:
+
+        """
+        Function to find the k largest
+        element in "nums" using a 
+        heap.
+        """
         pq = []
 
         for num in nums:
@@ -14,5 +22,5 @@ class Solution:
                 if pq[0] < num:
                     heapq.heappop(pq)
                     heapq.heappush(pq, num)
-        
+
         return pq[0]
