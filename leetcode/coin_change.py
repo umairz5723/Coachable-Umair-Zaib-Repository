@@ -60,4 +60,3 @@ class Solution:
             return -1
 
         return dp[-1]
-    
